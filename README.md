@@ -46,3 +46,7 @@ You can run `|` or `&` operator for two different records.
     record1 | record2
 
 IMPORTANT: When you run `|` or `&` operator, the result will modify receiver. In above example, record1 will change value.
+
+# Author
+
+Copyright (c) 2014 Jerry Lee (@wildjcrt). All Rights Reserved. Released under the [MIT License](https://github.com/womany/bitset-records/blob/master/LICENSE).
