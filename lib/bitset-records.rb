@@ -9,6 +9,38 @@ class BitsetRecords
     @bit2str = bit_array.join
   end
 
+  def |(record2)
+    str1 = value
+    str2 = record2.value
+
+    length_diff = (str1.length - str2.length).abs
+    unless length_diff == 0
+      if str1.length > str2.length
+        str2 = (str2.to_i(2) << length_diff).to_s(2)
+      else
+        str1 = (str1.to_i(2) << length_diff).to_s(2)
+      end
+    end
+
+    @bit2str = (str1.to_i(2) | str2.to_i(2)).to_s(2)
+  end
+
+  def &(record2)
+    str1 = value
+    str2 = record2.value
+
+    length_diff = (str1.length - str2.length).abs
+    unless length_diff == 0
+      if str1.length > str2.length
+        str2 = (str2.to_i(2) << length_diff).to_s(2)
+      else
+        str1 = (str1.to_i(2) << length_diff).to_s(2)
+      end
+    end
+
+    @bit2str = (str1.to_i(2) & str2.to_i(2)).to_s(2)
+  end
+
   def add(*args)
     args.compact!
     args.each do |id|
