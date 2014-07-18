@@ -37,7 +37,9 @@ You can count how many indexes in record by using `#quantity`.
 
 ### `|` and `&`
 
-You can run `|` or `&` operator for two different records.
+You can run `|` or `&` operator for two different records. Especially it supports different length records.
+
+When two records' lengths are different, it will choose the longer one automatically when operating.
 
     record1 = BitsetRecords.new 100
     record1.add 3,8
