@@ -9,6 +9,10 @@ class BitsetRecords
     @bit2str = bit_array.join
   end
 
+  def self.recover(str)
+    @bit2str = str.to_i.to_s(2)
+  end
+
   def |(record2)
     str1 = value
     str2 = record2.value
@@ -65,5 +69,9 @@ class BitsetRecords
 
   def quantity
     @bit2str.count('1') - 1
+  end
+
+  def store
+    @bit2str.to_i(2).to_s
   end
 end

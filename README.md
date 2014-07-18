@@ -49,6 +49,16 @@ When two records' lengths are different, it will choose the longer one automatic
 
 IMPORTANT: When you run `|` or `&` operator, the result will modify receiver. In above example, record1 will change value.
 
+### `store` and `recover`
+
+You may want to save record value in decimal string.
+
+    record.store
+
+And then get back. Note that `#recover` is a class method.
+
+    BitsetRecords.recover decimal_string
+
 # Author
 
 Copyright (c) 2014 Jerry Lee (@wildjcrt). All Rights Reserved. Released under the [MIT License](https://github.com/womany/bitset-records/blob/master/LICENSE).
