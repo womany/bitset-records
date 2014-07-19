@@ -17,6 +17,7 @@ class BitsetRecords
     bstring1 = value
     bstring2 = record2.value
 
+    # left shift operator
     length_diff = (bstring1.length - bstring2.length).abs
     unless length_diff == 0
       if bstring1.length > bstring2.length
@@ -33,6 +34,7 @@ class BitsetRecords
     bstring1 = value
     bstring2 = record2.value
 
+    # left shift operator
     length_diff = (bstring1.length - bstring2.length).abs
     unless length_diff == 0
       if bstring1.length > bstring2.length
