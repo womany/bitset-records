@@ -83,6 +83,6 @@ And then get back. Note that `#recover` is a class method.
 
     BitsetRecords.recover "74244" # "10010001000000100"
 
-# Author
+# License
 
-Copyright (c) 2014 Jerry Lee (@wildjcrt). All Rights Reserved. Released under the [MIT License](https://github.com/womany/bitset-records/blob/master/LICENSE).
+[MIT License.](https://github.com/womany/bitset-records/blob/master/LICENSE) Copyright (c) 2014 Jerry Lee (@wildjcrt)
