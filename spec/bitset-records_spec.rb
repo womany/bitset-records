@@ -27,4 +27,18 @@ describe BitsetRecords do
 
     expect(record_1 | record_2).to eq("11110000000000000")
   end
+
+  context "#add" do
+    let(:record) { BitsetRecords.new(16) }
+    it "fails when passed a string" do
+      expect { record.add("2") }.to raise_error("Add accepts only integers")
+    end
+  end
+
+  context "#remove" do
+    let(:record) { BitsetRecords.new(16) }
+    it "fails when passed a string" do
+      expect { record.remove("2") }.to raise_error("Remove accepts only integers")
+    end
+  end
 end
