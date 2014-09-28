@@ -49,20 +49,28 @@ class BitsetRecords
 
   def add(*args)
     args.compact!
-    args.each do |id|
-      @bit2str[id] = '1'
-    end
+    if args.all? { |a| Integer === a }
+      args.each do |id|
+        @bit2str[id] = '1'
+      end
 
-    @bit2str
+      @bit2str
+    else
+      raise 'Add accepts only integers'
+    end
   end
 
   def remove(*args)
     args.compact!
-    args.each do |id|
-      @bit2str[id] = '0'
-    end
+    if args.all? { |a| Integer === a }
+      args.each do |id|
+        @bit2str[id] = '0'
+      end
 
-    @bit2str
+      @bit2str
+    else
+      raise 'Remove accepts only integers'
+    end
   end
 
   def value
