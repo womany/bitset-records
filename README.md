@@ -85,4 +85,4 @@ And then get back. Note that `#recover` is a class method.
 
 # License
 
-[MIT License.](https://github.com/womany/bitset-records/blob/master/LICENSE) Copyright (c) 2014 Jerry Lee (@wildjcrt)
+[MIT License.](https://github.com/womany/bitset-records/blob/master/LICENSE) Copyright (c) 2014 womany.net. http://womany.net
